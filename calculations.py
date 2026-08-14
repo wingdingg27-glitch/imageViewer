@@ -36,11 +36,11 @@ class Calculations:
 
     def next(self):
         if not self.isEmpty():
-            self.i = (self.i+1) % len(self.images)
+            self.i = (self.i+2) % len(self.images)
 
     def prev(self):
         if not self.isEmpty():
-            self.i = (self.i - 1) % len(self.images)
+            self.i = (self.i - 2) % len(self.images)
 
     def isEmpty(self):
         return len(self.images)==0
